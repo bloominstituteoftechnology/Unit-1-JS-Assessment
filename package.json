@@ -1,11 +1,11 @@
 {
-  "name": "nested-data-exercises",
+  "name": "lambda-school-unit-one-js-assessment",
   "version": "1.0.2",
   "description": "practice array & data-structure skills here!",
   "main": "index.js",
-  "homepage": "https://codesandbox.io/s/github/justsml/nested-data-exercises?previewwindow=tests",
+  "homepage": "https://codesandbox.io/s/github/LambdaSchool/Unit-1-JS-Assessment?previewwindow=tests",
   "repository": {
-    "url": "git@github.com:justsml/nested-data-exercises.git",
+    "url": "git@github.com:LambdaSchool/Unit-1-JS-Assessment.git",
     "type": "git"
   },
   "scripts": {
