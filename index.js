@@ -1,9 +1,4 @@
 /*
-> 🚀 Before you begin:
-> Review the shape of the sample data in README.md: https://github.com/justsml/nested-data-exercises#data
-
-// Then, complete the functions below!
-
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -12,6 +7,8 @@
 
 /**
  * ### Challenge `getName`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Must return input object's `name` property.
  *
@@ -24,6 +21,8 @@ function getName(character) {
 
 /**
  * ### Challenge `getFilmCount`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Must return the number of elements in the `films` property.
  *
@@ -36,6 +35,8 @@ function getFilmCount(character) {
 
 /**
  * ### Challenge `getFirstStarshipName`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Return first starship's name from `starships` property.
  * If length is 0. Return 'none'
@@ -46,6 +47,8 @@ function getFirstStarshipName(character) {
 
 /**
  * ### Challenge `getSummary`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Combine specified field values and return them in the following string format:
  *    Template: `{name}, {height}cm, {mass}kg. Featured in {film count} films.`
@@ -57,6 +60,8 @@ function getSummary(character) {
 
 /**
  * ### Challenge `getVehiclesCostInCreditsSumTotal`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Sum the total cost in credits for all vehicles defined on the input character.
  * Sample data expected output: 8000
@@ -67,6 +72,8 @@ function getVehiclesCostInCreditsSumTotal(character) {
 
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Sum the number of crew and passenger spots for all starships defined on the
  * input character.
@@ -79,6 +86,8 @@ function getStarshipPassengerAndCrewSumTotal(character) {
 
 /**
  * ### Challenge `getNthFilm`
+ * MVP Challenge 🤓
+ * 
  * @instructions
  * Return the Nth `films` value (in this case title).
  * Rules: filmNumber starts at 1 and refers to the *first* film, and includes only the range 1-3.
@@ -94,6 +103,8 @@ function getNthFilm(character, filmNumber) {
 
 /**
  * ### Challenge `getCargoCapacityTotal`
+ * Stretch Goal 💪
+ * 
  * @instructions
  * Sum the total cargo capacity for *all* vehicles and starships.
  * Some objects may not have a value for their cargo capacity.
@@ -106,6 +117,8 @@ function getCargoCapacityTotal(character) {
 
 /**
  * ### Challenge `getFastestStarshipName`
+ * Stretch Goal 💪
+ * 
  * @instructions
  * Find the fastest starship (by atmospheric speed.)
  * Determine the correct field to compare, and return the name of the fastest.
@@ -119,6 +132,8 @@ function getFastestStarshipName(character) {
 
 /**
  * ### Challenge `getLargestCargoStarshipModelName`
+ * Stretch Goal 💪
+ * 
  * @instructions
  * Determine the starship with the largest cargo capacity.
  * Return it's **_model_** property.
@@ -132,7 +147,7 @@ function getLargestCargoStarshipModelName(character) {
 
 /**
  * ### Challenge `getSlowestVehicleOrStarshipName`
- * Difficulty: _Tricky_
+ *Stretch Goal 💪
  *
  * @instructions
  * Find the slowest transport (including vehicles and starships)
@@ -151,6 +166,7 @@ function getSlowestVehicleOrStarshipName(character) {
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
+// DO NOT CHANGE ANYTHING BELOW THIS LINE //
 if (typeof exports !== 'undefined') {
   // IGNORE: Test/Env Detected
   // For Node/Non-browser test env

@@ -60,7 +60,7 @@ The CodeSandbox option is fast & highly recommended.
 
 **1. Fastest Option**
 
-[LAUNCH ON CODESANDBOX 🚀](https://codesandbox.io/s/github/justsml/nested-data-exercises?previewwindow=tests)
+[LAUNCH ON CODESANDBOX 🚀](https://codesandbox.io/s/github/LambdaSchool/Unit-1-JS-Assessment?previewwindow=tests)
 
 
 <details>
