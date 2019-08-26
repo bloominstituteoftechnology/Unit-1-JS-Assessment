@@ -60,7 +60,7 @@ The CodeSandbox option is fast & highly recommended.
 
 **1. Fastest Option**
 
-[LAUNCH ON CODESANDBOX 🚀](https://codesandbox.io/s/github/LambdaSchool/Unit-1-JS-Assessment?previewwindow=tests)
+[LAUNCH ON CODESANDBOX 🚀](https://codesandbox.io/s/github/LambdaSchool/Unit-1-JS-Assessment)
 
 
 <details>
@@ -199,6 +199,7 @@ Example data your code will be tested against.
 
 #### Helpful tips & reminders 🔎
 
+* If you get stuck, it can help to review the test script `test/index.test.js`.
 * **Critical:** Don't make assumptions about input data types. (Convert/handle `Numbers` & `null`)
     * Convert **number strings** into **actual numbers** with built-in functions `parseInt`, `parseFloat`, `Number`, etc.
 * Ensure your functions **`return somethingUseful`.**
