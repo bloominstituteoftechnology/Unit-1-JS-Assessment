@@ -38,7 +38,7 @@ function getFilmCount(character) {
  * MVP Challenge 🤓
  * 
  * @instructions
- * Return first starship's name from `starships` property.
+ * Return second starship's name from `starships` property.
  * If length is 0. Return 'none'
 */
 function getSecondStarshipName(character) {
