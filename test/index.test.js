@@ -22,7 +22,7 @@ if (typeof exports !== 'undefined') {
     getFastestStarshipName,
     getLargestCargoStarshipModelName,
     getSlowestVehicleOrStarshipName,
-    getFirstStarshipName,
+    getSecondStarshipName,
     getNthFilm
   } = require('../index.js')
 }
@@ -40,10 +40,10 @@ describe('getFilmCount()', () => {
   it('expected film count for Obi-Wan', () => { expect(getFilmCount(obiWanKenobi)).to.eq(6) })
 })
 
-describe('getFirstStarshipName()', () => {
-  it('Luke\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(lukeSkywalker)).to.eq(`X-wing`) })
-  it('Leia\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(leiaOrgana)).to.eq(`none`) })
-  it('Obi-Wan\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(obiWanKenobi)).to.eq(`Jedi starfighter`) })
+describe('getSecondStarshipName()', () => {
+  it('Luke\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(lukeSkywalker)).to.eq(`Imperial shuttle`) })
+  it('Leia\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(leiaOrgana)).to.eq(`none`) })
+  it('Obi-Wan\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(obiWanKenobi)).to.eq(`Trade Federation cruiser`) })
 })
 
 describe('getSummary()', () => {

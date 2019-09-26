@@ -7,7 +7,7 @@
 
 /**
  * ### Challenge `getName`
- * MVP Challenge 🤓
+ * Example ✅
  * 
  * @instructions
  * Must return input object's `name` property.
@@ -34,14 +34,14 @@ function getFilmCount(character) {
 }
 
 /**
- * ### Challenge `getFirstStarshipName`
+ * ### Challenge `getSecondStarshipName`
  * MVP Challenge 🤓
  * 
  * @instructions
  * Return first starship's name from `starships` property.
  * If length is 0. Return 'none'
 */
-function getFirstStarshipName(character) {
+function getSecondStarshipName(character) {
   // TODO: Add your code here.
 }
 
@@ -173,7 +173,7 @@ if (typeof exports !== 'undefined') {
   module.exports = module.exports || {}
   if (getName) { module.exports.getName = getName }
   if (getFilmCount) { module.exports.getFilmCount = getFilmCount }
-  if (getFirstStarshipName) { module.exports.getFirstStarshipName = getFirstStarshipName }
+  if (getSecondStarshipName) { module.exports.getSecondStarshipName = getSecondStarshipName }
   if (getSummary) { module.exports.getSummary = getSummary }
   if (getVehiclesCostInCreditsSumTotal) { module.exports.getVehiclesCostInCreditsSumTotal = getVehiclesCostInCreditsSumTotal }
   if (getStarshipPassengerAndCrewSumTotal) { module.exports.getStarshipPassengerAndCrewSumTotal = getStarshipPassengerAndCrewSumTotal }
