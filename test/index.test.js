@@ -41,9 +41,9 @@ describe('getFilmCount()', () => {
 })
 
 describe('getSecondStarshipName()', () => {
-  it('Luke\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(lukeSkywalker)).to.eq(`Imperial shuttle`) })
-  it('Leia\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(leiaOrgana)).to.eq(`none`) })
-  it('Obi-Wan\'s first starship, based on array/list order' , () => { expect(getSecondStarshipName(obiWanKenobi)).to.eq(`Trade Federation cruiser`) })
+  it('Luke\'s second starship, based on array/list order' , () => { expect(getSecondStarshipName(lukeSkywalker)).to.eq(`Imperial shuttle`) })
+  it('Leia\'s second starship, based on array/list order' , () => { expect(getSecondStarshipName(leiaOrgana)).to.eq(`none`) })
+  it('Obi-Wan\'s second starship, based on array/list order' , () => { expect(getSecondStarshipName(obiWanKenobi)).to.eq(`Trade Federation cruiser`) })
 })
 
 describe('getSummary()', () => {
