@@ -30,6 +30,7 @@ function getName(character) {
  */
 function getFilmCount(character) {
   // TODO: Add your code inside the functions (others below).
+  return character.films.length;
 
 }
 
