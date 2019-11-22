@@ -75,7 +75,7 @@ function getSummary(character) {
 */
 function getVehiclesCostInCreditsSumTotal(character) {
   // TODO: Add your code here.
-  let total_cost = character.vehicles.reduce((total_cost, vehicles) => {
+  const total_cost = character.vehicles.reduce((total_cost, vehicles) => {
     return (total_cost += vehicles.cost_in_credits);
   }, 0);
   return total_cost;
@@ -94,6 +94,10 @@ function getVehiclesCostInCreditsSumTotal(character) {
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
   // TODO: Add your code here.
+  const sum = character.starships.reduce((sum, vehicles) => {
+    return sum += vehicles.crew + vehicles.passengers
+  }, 0)
+  return sum;
 }
 
 /**
