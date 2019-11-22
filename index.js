@@ -43,8 +43,12 @@ function getFilmCount(character) {
  * If length is 0. Return 'none'
 */
 function getSecondStarshipName(character) {
+  if (character.starships.length === 0) { return 'none';} else {
   // TODO: Add your code here.
+  return (character.starships[1].name); }
+
 }
+
 
 /**
  * ### Challenge `getSummary`
@@ -57,6 +61,8 @@ function getSecondStarshipName(character) {
  */
 function getSummary(character) {
   // TODO: Add your code here.
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.`
+
 }
 
 /**
@@ -69,7 +75,12 @@ function getSummary(character) {
 */
 function getVehiclesCostInCreditsSumTotal(character) {
   // TODO: Add your code here.
+  let total_cost = character.vehicles.reduce((total_cost, vehicles) => {
+    return (total_cost += vehicles.cost_in_credits);
+  }, 0);
+  return total_cost;
 }
+
 
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
@@ -114,6 +125,7 @@ function getNthFilm(character, filmNumber) {
 */
 function getCargoCapacityTotal(character) {
   // TODO: Add your code here.
+  
 }
 
 /**
@@ -144,6 +156,7 @@ function getFastestStarshipName(character) {
 */
 function getLargestCargoStarshipModelName(character) {
   // TODO: Add your code here.
+
 }
 
 /**
