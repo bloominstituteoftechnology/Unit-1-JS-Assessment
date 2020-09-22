@@ -29,9 +29,18 @@ function getName(character) {
  * Sample data expected output: 5
  */
 function getFilmCount(character) {
-  // TODO: Add your code inside the functions (others below).
+    if (character === character){
+    return character.films.length;
+  }
+  }
 
-}
+console.log(getFilmCount(lukeSkywalker));
+
+  
+  
+
+  
+
 
 /**
  * ### Challenge `getSecondStarshipName`
