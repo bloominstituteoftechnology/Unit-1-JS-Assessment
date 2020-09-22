@@ -14,30 +14,8 @@ git clone <insert your git clone url here>
 cd <repo folder name>
 npm install
 npm run test:watch
-#####
-### Or without fs watching:
-# npm test
+
 ```
-
-**NOTE:** In local development, use the file watcher command: `npm run test:watch`.
-
-</details>
-
-<details>
-  <summary>3. Local Setup Instructions: Run Tests in Browser</summary>
-
-1. Fork & clone to your local computer
-1. `cd` into your newly cloned repository
-1. Install and Start using `npm`
-
-```sh
-git clone <insert your git clone url here>
-cd <repo folder name>
-npm install
-npm start
-```
-
-</details>
 
 
 
