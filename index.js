@@ -78,10 +78,6 @@ function getVehiclesCostInCreditsSumTotal(character) {
   return sum;
 }
 
-console.log(getVehiclesCostInCreditsSumTotal(lukeSkywalker));
-
-
-console.log(lukeSkywalker.vehicles[1].cost_in_credits);
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
  * MVP Challenge 🤓
@@ -93,7 +89,13 @@ console.log(lukeSkywalker.vehicles[1].cost_in_credits);
  * Sample data expected output: 27
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
-  // TODO: Add your code here.
+  let passengers = 0;
+  let crew = 0;
+  for(let i = 0; i < character.starships.length; i++){
+    passengers += character.starships[i].passengers
+    crew += character.starships[i].crew
+  }
+  return passengers + crew;
 }
 
 /**
@@ -110,8 +112,13 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
 function getNthFilm(character, filmNumber) {
-  // TODO: Add your code here.
-}
+  if (filmNumber < 4){
+  return character.films[filmNumber-1];
+}else{
+  return `There are only 3 Star Wars movies. Space Balls excluded.`
+} }
+
+
 
 /**
  * ### Challenge `getCargoCapacityTotal`
