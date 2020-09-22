@@ -1,70 +1,7 @@
-# Nested Data Exercises
-
-### 💪 10+ Practice Challenges: Nested `Objects` & `Arrays`
-
-This challenge will test your ability to work with nested Objects and Arrays.
-
-Uses [real-world 'inspired' data.](#data)
-
-> If you are experienced on this topic, expand the ["💡 Challenge Yourself!" section](#stretch) (following the instructions.)
-
-##### Index
-
-* [Instructions](#instructions)
-* [Get Started](#get-started)
-* Preview Test [Data](#data)
-* Stuck? Check [Hints](#hints)
-
-## Instructions
-
-**Task:** Complete the 10+ functions in [`index.js`](./index.js) and pass all tests specified in [`test/index.test.js`](./test/index.test.js) ✅
-
-The difficulty increases as you progress.
-
-> Before you begin coding, review [test data below](#data)
-
-1. `getName(character)` -> `Luke Skywalker`
-1. `getFilmCount(character)` -> 5
-1. `getFirstStarshipName(character)` -> `X-wing`
-1. `getSummary(character)` -> `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
-1. `getVehiclesCostInCreditsSumTotal(character)` -> 8000
-1. `getStarshipPassengerAndCrewSumTotal(character)` -> 27
-1. `getNthFilm(character, filmNumber)` filmNumber=1 -> `A New Hope`
-1. `getCargoCapacityTotal(character)` -> 80124
-1. `getFastestStarshipName(character)` -> `X-wing`
-1. `getLargestCargoStarshipModelName(character)` -> `Lambda-class T-4a shuttle`
-1. `getSlowestVehicleOrStarshipName(character)` -> `Imperial Speeder Bike`
-
-
-### Stretch
-
-<details>
-  <summary> 💡 Challenge Yourself! (expand for stretch tips) </summary>
-
-* Research & use different patterns. (Destructuring, move common code into reusable helper methods, functional programming techniques)
-* Trade completed code with a peer:
-  * Pair program: Take turns (30-60 min.) working through a refactor. Talk through & optimize as needed.
-  * Trade code for feedback! (Example format: 3&1, 3 things that you liked and 1 to improve.)
-* Time yourself. See if you can beat your own time *starting over.* **Speed run!**
-* See how many tests you can pass/complete before Googling or asking for help.
-* When you're finished, refactor & improve readability. Write up why it is improved.
-
-</details>
-
 
 ## Get Started
 
-3 options are included below.
-
-The CodeSandbox option is fast & highly recommended.
-
-**1. Fastest Option**
-
-[LAUNCH ON CODESANDBOX 🚀](https://codesandbox.io/s/github/LambdaSchool/Unit-1-JS-Assessment)
-
-
-<details>
-  <summary>2. Local Setup Instructions: From Command Line</summary>
+ Local Setup Instructions: From Command Line</summary>
 
 1. Fork & clone to your local computer
 1. `cd` into your newly cloned repository
@@ -106,7 +43,7 @@ npm start
 
 ## Data
 
-Example data your code will be tested against.
+Example data your code will be tested against. This can be found in the data folder. 
 
 ```js
 // Complete Test Data Object (credit: https://SWAPI.co)
@@ -199,7 +136,6 @@ Example data your code will be tested against.
 
 #### Helpful tips & reminders 🔎
 
-* If you get stuck, it can help to review the test script `test/index.test.js`.
 * **Critical:** Don't make assumptions about input data types. (Convert/handle `Numbers` & `null`)
     * Convert **number strings** into **actual numbers** with built-in functions `parseInt`, `parseFloat`, `Number`, etc.
 * Ensure your functions **`return somethingUseful`.**
