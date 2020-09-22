@@ -22,6 +22,10 @@ npm run test:watch
 ## Data
 
 Example data your code will be tested against. This can be found in the data folder. 
+if you want to console.log() to check your outputs when a function is invoked the objects are named: 
+lukeSkywalker,
+leiaOrgana,
+and obiWanKenobi 
 
 ```js
 // Complete Test Data Object (credit: https://SWAPI.co)
