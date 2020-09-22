@@ -1,13 +1,11 @@
-
 ## Get Started
 
- Local Setup Instructions: From Command Line</summary>
+Local Setup Instructions: From Command Line</summary>
 
 1. Fork & clone to your local computer
 1. `cd` into your newly cloned repository
-1. Install using `npm`
-1. Run test command
-
+1. Install dependencies using `npm i`
+1. Run test command using `npm test`
 
 ```sh
 git clone <insert your git clone url here>
@@ -17,15 +15,13 @@ npm run test:watch
 
 ```
 
-
-
 ## Data
 
-Example data your code will be tested against. This can be found in the data folder. 
-if you want to console.log() to check your outputs when a function is invoked the objects are named: 
+Example data your code will be tested against. This can be found in the data folder.
+if you want to console.log() to check your outputs when a function is invoked the objects are named:
 lukeSkywalker,
 leiaOrgana,
-and obiWanKenobi 
+and obiWanKenobi
 
 ```js
 // Complete Test Data Object (credit: https://SWAPI.co)
@@ -112,18 +108,15 @@ and obiWanKenobi
 }
 ```
 
-
-
 ## Hints
 
 #### Helpful tips & reminders 🔎
 
-* **Critical:** Don't make assumptions about input data types. (Convert/handle `Numbers` & `null`)
-    * Convert **number strings** into **actual numbers** with built-in functions `parseInt`, `parseFloat`, `Number`, etc.
-* Ensure your functions **`return somethingUseful`.**
-* Make sure you understand the requirements. All the words used? Try list the steps in comments first.
-* Don't forget the source data uses `snake_case` naming.
-* Pay close attention to array vs. object syntax (`vehicles[0].name` vs. `character.vehicles`.)
-* Some of the functions include detailed instructions.
-* You might have to infer the desired fields. Carefully read the description and function name (description included above the function.)
-
+-   **Critical:** Don't make assumptions about input data types. (Convert/handle `Numbers` & `null`)
+    -   Convert **number strings** into **actual numbers** with built-in functions `parseInt`, `parseFloat`, `Number`, etc.
+-   Ensure your functions **`return somethingUseful`.**
+-   Make sure you understand the requirements. All the words used? Try list the steps in comments first.
+-   Don't forget the source data uses `snake_case` naming.
+-   Pay close attention to array vs. object syntax (`vehicles[0].name` vs. `character.vehicles`.)
+-   Some of the functions include detailed instructions.
+-   You might have to infer the desired fields. Carefully read the description and function name (description included above the function.)
