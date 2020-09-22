@@ -29,10 +29,11 @@ function getName(character) {
  * Sample data expected output: 5
  */
 function getFilmCount(character) {
-  // TODO: Add your code inside the functions (others below).
+    return character.films.length;
+  }
 
-}
 
+// @ts-ignore
 /**
  * ### Challenge `getSecondStarshipName`
  * MVP Challenge 🤓
@@ -42,8 +43,11 @@ function getFilmCount(character) {
  * If length is 0. Return 'none'
 */
 function getSecondStarshipName(character) {
-  // TODO: Add your code here.
-}
+  if (character.starships.length > 0){
+  return character.starships[1].name
+} else {
+  return 'none'
+}}
 
 /**
  * ### Challenge `getSummary`
@@ -55,7 +59,7 @@ function getSecondStarshipName(character) {
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
 function getSummary(character) {
-  // TODO: Add your code here.
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.` 
 }
 
 /**
@@ -67,7 +71,11 @@ function getSummary(character) {
  * Sample data expected output: 8000
 */
 function getVehiclesCostInCreditsSumTotal(character) {
-  // TODO: Add your code here.
+  let sum = 0;
+  for(let i = 0; i < character.vehicles.length; i++){
+  sum += character.vehicles[i].cost_in_credits
+  }
+  return sum;
 }
 
 /**
@@ -81,7 +89,13 @@ function getVehiclesCostInCreditsSumTotal(character) {
  * Sample data expected output: 27
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
-  // TODO: Add your code here.
+  let passengers = 0;
+  let crew = 0;
+  for(let i = 0; i < character.starships.length; i++){
+    passengers += character.starships[i].passengers
+    crew += character.starships[i].crew
+  }
+  return passengers + crew;
 }
 
 /**
@@ -98,8 +112,13 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
 function getNthFilm(character, filmNumber) {
-  // TODO: Add your code here.
-}
+  if (filmNumber < 4){
+  return character.films[filmNumber-1];
+}else{
+  return `There are only 3 Star Wars movies. Space Balls excluded.`
+} }
+
+
 
 /**
  * ### Challenge `getCargoCapacityTotal`
