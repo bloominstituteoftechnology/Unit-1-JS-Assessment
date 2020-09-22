@@ -29,19 +29,11 @@ function getName(character) {
  * Sample data expected output: 5
  */
 function getFilmCount(character) {
-    if (character === character){
     return character.films.length;
   }
-  }
-
-console.log(getFilmCount(lukeSkywalker));
-
-  
-  
-
-  
 
 
+// @ts-ignore
 /**
  * ### Challenge `getSecondStarshipName`
  * MVP Challenge 🤓
@@ -51,8 +43,11 @@ console.log(getFilmCount(lukeSkywalker));
  * If length is 0. Return 'none'
 */
 function getSecondStarshipName(character) {
-  // TODO: Add your code here.
-}
+  if (character.starships.length > 0){
+  return character.starships[1].name
+} else {
+  return 'none'
+}}
 
 /**
  * ### Challenge `getSummary`
@@ -64,7 +59,7 @@ function getSecondStarshipName(character) {
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
 function getSummary(character) {
-  // TODO: Add your code here.
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.` 
 }
 
 /**
@@ -76,9 +71,17 @@ function getSummary(character) {
  * Sample data expected output: 8000
 */
 function getVehiclesCostInCreditsSumTotal(character) {
-  // TODO: Add your code here.
+  let sum = 0;
+  for(let i = 0; i < character.vehicles.length; i++){
+  sum += character.vehicles[i].cost_in_credits
+  }
+  return sum;
 }
 
+console.log(getVehiclesCostInCreditsSumTotal(lukeSkywalker));
+
+
+console.log(lukeSkywalker.vehicles[1].cost_in_credits);
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
  * MVP Challenge 🤓
