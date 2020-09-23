@@ -5,8 +5,6 @@
 // 👇 COMPLETE YOUR WORK BELOW 👇
 */
 
-const { films } = require("./data/fixtures-bundle")
-
 /**
  * ### Challenge `getName`
  * Example ✅
