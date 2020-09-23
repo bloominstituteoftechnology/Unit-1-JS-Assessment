@@ -5,6 +5,8 @@
 // 👇 COMPLETE YOUR WORK BELOW 👇
 */
 
+// const { starships } = require("./data/fixtures-bundle")
+
 /**
  * ### Challenge `getName`
  * Example ✅
@@ -132,8 +134,21 @@ function getNthFilm(character, filmNumber) {
  *
  * Sample data expected output: 80124
 */
+
 function getCargoCapacityTotal(character) {
-  // TODO: Add your code here.
+  let vehicleSum = 0
+  let starshipSum = 0
+  for (let i = 0; i<character.vehicles.length; i++) {
+    vehicleSum += parseInt(character.vehicles[i].cargo_capacity, 10)
+  }
+  for (let i = 0; i<character.starships.length; i++) {
+    // if (character.starships[i].cargo_capacity === null) {
+      
+    // } else {
+    starshipSum += Number(character.starships[i].cargo_capacity, 10)      
+    }
+   sum = vehicleSum + starshipSum
+   return sum
 }
 
 /**
@@ -147,8 +162,20 @@ function getCargoCapacityTotal(character) {
  *
  * Sample data expected output: `X-wing`
 */
+
 function getFastestStarshipName(character) {
-  // TODO: Add your code here.
+  let maxSpeed = []
+  character.starships.forEach(element => {
+    maxSpeed.push(Number(element.max_atmosphering_speed))
+  });
+    for (let i = 0; i < character.starships.length; i++) {
+    if (character.starships.length >= 1) {
+      if (character.starships[i].max_atmosphering_speed == Math.max(...maxSpeed)) {
+      return character.starships[i].name
+    }
+    }
+  }
+   return 'none'
 }
 
 /**
@@ -163,7 +190,18 @@ function getFastestStarshipName(character) {
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
 function getLargestCargoStarshipModelName(character) {
-  // TODO: Add your code here.
+  let maxCargo = []
+  character.starships.forEach(element => {
+    maxCargo.push(Number(element.cargo_capacity))
+  });
+    for (let i = 0; i < character.starships.length; i++) {
+    if (character.starships.length >= 1) {
+      if (character.starships[i].cargo_capacity == Math.max(...maxCargo)) {
+      return character.starships[i].model
+    }
+    }
+  }
+   return 'none'
 }
 
 /**
@@ -177,8 +215,29 @@ function getLargestCargoStarshipModelName(character) {
  *
 */
 function getSlowestVehicleOrStarshipName(character) {
-  // TODO: Add your code here.
-}
+  let objects = []
+  character.starships.forEach(element => {
+    objects.push(Number(element.max_atmosphering_speed))
+  })
+  character.vehicles.forEach(element => {
+    objects.push(Number(element.max_atmosphering_speed))
+  })
+    for (let i = 0; i < character.starships.length; i++) {
+    if (character.starships.length >= 1) {
+      if (character.starships[i].max_atmosphering_speed == Math.min(...objects)) {
+      return character.starships[i].name
+    }
+    }
+    }
+    for (let i = 0; i < character.vehicles.length; i++) {
+      if (character.vehicles.length >= 1) {
+        if (character.vehicles[i].max_atmosphering_speed == Math.min(...objects)) {
+        return character.vehicles[i].name
+      }
+      }
+      }
+  return 'none'    
+  }
 
 
 
