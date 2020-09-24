@@ -95,10 +95,22 @@ console.log(getName(lukeSkywalker)
      *
      * Sample data expected output: 27
      */
+    let x = 0;
+    let newArr = [];
+
     function getStarshipPassengerAndCrewSumTotal(character) {
       // TODO: Add your code here.
-    }
 
+      character.starships.forEach(function (item) {
+        newArr.push(item.passengers + item.crew);
+      });
+
+      for (let i = 0; i < newArr.length; i++) {
+        x = x + newArr[i];
+      }
+      return x;
+    }
+    // console.log(getStarshipPassengerAndCrewSumTotal(lukeSkywalker));
     /**
      * ### Challenge `getNthFilm`
      * MVP Challenge 🤓
@@ -114,7 +126,24 @@ console.log(getName(lukeSkywalker)
      */
     function getNthFilm(character, filmNumber) {
       // TODO: Add your code here.
+      if (filmNumber === 1 && character.films.includes("A New Hope")) {
+        return "A New Hope";
+      } else if (
+        filmNumber === 2 &&
+        character.films.includes("The Empire Strikes Back")
+      ) {
+        return "The Empire Strikes Back";
+      } else if (
+        filmNumber === 3 &&
+        character.films.includes("Return of the Jedi")
+      ) {
+        return "Return of the Jedi";
+      } else {
+        return "There are only 3 Star Wars movies. Flan fiction excluded.";
+      }
     }
+    // console.log(getNthFilm(lukeSkywalker, 1));
+
 
     /**
      * ### Challenge `getCargoCapacityTotal`
