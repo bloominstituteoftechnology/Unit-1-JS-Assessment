@@ -1,3 +1,14 @@
+I did the whole thing on codepen here: 
+https://codepen.io/matt22881/pen/KKzJbwO?editors=0012
+
+ i've also put it in index,js
+
+not sure if i'm doing something wrong so i'll inclede error logs im my repo in a moment.
+
+thank you for your attention
+
+
+
 ## Get Started
 
 Local Setup Instructions: From Command Line</summary>
