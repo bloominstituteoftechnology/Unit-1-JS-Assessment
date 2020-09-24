@@ -1,5 +1,4 @@
 /*
-
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -30,7 +29,7 @@ function getName(character) {
  */
 function getFilmCount(character) {
   // TODO: Add your code inside the functions (others below).
-
+  return character.films.length;
 }
 
 /**
@@ -43,6 +42,12 @@ function getFilmCount(character) {
 */
 function getSecondStarshipName(character) {
   // TODO: Add your code here.
+  if(character.starships.length === 0){
+    return 'none';
+  }
+  else{
+    return character.starships[1].name;
+  }
 }
 
 /**
@@ -56,6 +61,7 @@ function getSecondStarshipName(character) {
  */
 function getSummary(character) {
   // TODO: Add your code here.
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.`
 }
 
 /**
@@ -68,6 +74,7 @@ function getSummary(character) {
 */
 function getVehiclesCostInCreditsSumTotal(character) {
   // TODO: Add your code here.
+  return character.vehicles.reduce((acc, cum) => acc + cum.cost_in_credits, 0);
 }
 
 /**
@@ -82,6 +89,7 @@ function getVehiclesCostInCreditsSumTotal(character) {
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
   // TODO: Add your code here.
+  return character.starships.reduce((acc, cum) => acc + cum.crew + cum.passengers, 0);
 }
 
 /**
@@ -99,6 +107,12 @@ function getStarshipPassengerAndCrewSumTotal(character) {
 */
 function getNthFilm(character, filmNumber) {
   // TODO: Add your code here.
+  if(filmNumber > 3 || filmNumber < 1){
+    return `There are only 3 Star Wars movies. The Matrix not included`
+  }
+  else{
+    return character.films[filmNumber - 1];
+  }
 }
 
 /**
@@ -113,6 +127,16 @@ function getNthFilm(character, filmNumber) {
 */
 function getCargoCapacityTotal(character) {
   // TODO: Add your code here.
+  let cargo = 0;
+  character.starships.forEach(element => {
+    if(Number(element.cargo_capacity)){
+      cargo += Number(element.cargo_capacity);
+    }});
+    character.vehicles.forEach(element => {
+      if(typeof Number(element.cargo_capacity) === 'number'){
+        cargo += Number(element.cargo_capacity);
+    }});
+    return cargo;
 }
 
 /**
@@ -126,10 +150,9 @@ function getCargoCapacityTotal(character) {
  *
  * Sample data expected output: `X-wing`
 */
-function getFastestStarshipName(character) {
+function getFastestStarshipName(character) 
   // TODO: Add your code here.
-}
-
+  
 /**
  * ### Challenge `getLargestCargoStarshipModelName`
  * Stretch Goal 💪
@@ -141,10 +164,9 @@ function getFastestStarshipName(character) {
  *
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
-function getLargestCargoStarshipModelName(character) {
+function getLargestCargoStarshipModelName(character) 
   // TODO: Add your code here.
-}
-
+ 
 /**
  * ### Challenge `getSlowestVehicleOrStarshipName`
  *Stretch Goal 💪
@@ -155,10 +177,9 @@ function getLargestCargoStarshipModelName(character) {
  * If the character does not have any starships or vehicles, then return string 'none'.
  *
 */
-function getSlowestVehicleOrStarshipName(character) {
+function getSlowestVehicleOrStarshipName(character) 
   // TODO: Add your code here.
-}
-
+ 
 
 
 
