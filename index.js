@@ -28,9 +28,8 @@ function getName(character) {
  *
  * Sample data expected output: 5
  */
-function getFilmCount(character) {
-  // TODO: Add your code inside the functions (others below).
-
+function getFilmCount(character){
+return character.films.length;
 }
 
 /**
@@ -41,8 +40,10 @@ function getFilmCount(character) {
  * Return second starship's name from `starships` property.
  * If length is 0. Return 'none'
 */
-function getSecondStarshipName(character) {
-  // TODO: Add your code here.
+function getSecondStarshipName(character){
+  if(character.starships.length === 0){
+    return  "none";
+  }else return character.starships[1].name;
 }
 
 /**
@@ -55,8 +56,10 @@ function getSecondStarshipName(character) {
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
 function getSummary(character) {
-  // TODO: Add your code here.
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.`;
 }
+
+
 
 /**
  * ### Challenge `getVehiclesCostInCreditsSumTotal`
@@ -67,7 +70,11 @@ function getSummary(character) {
  * Sample data expected output: 8000
 */
 function getVehiclesCostInCreditsSumTotal(character) {
-  // TODO: Add your code here.
+  var total = 0;
+  for(let i = 0; i < character.vehicles.length; i++){
+    total += character.vehicles[i].cost_in_credits;
+  }
+  return total;
 }
 
 /**
@@ -81,7 +88,11 @@ function getVehiclesCostInCreditsSumTotal(character) {
  * Sample data expected output: 27
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
-  // TODO: Add your code here.
+ let total = 0;
+ for(let i = 0; i < character.starships.length; i++){
+   total += character.starships[i].crew + character.starships[i].passengers;
+ } 
+ return total;
 }
 
 /**
@@ -98,7 +109,7 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
 function getNthFilm(character, filmNumber) {
-  // TODO: Add your code here.
+ return character.films[filmNumber -1]
 }
 
 /**
